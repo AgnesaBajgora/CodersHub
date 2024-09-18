@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/css/navbar.css">
+        <link rel="stylesheet" href="resources/css/news.css">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/footer.css">
+        <!-- inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- oxanium -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- icons -->
+        <script src="https://kit.fontawesome.com/d51bc384ee.js" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+
+    <style>
+        .news_header {
+            min-height: 30vh;
+        }
+        .path{
+            width: 100%;
+            display: inline-flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .firstPath, .secondPath{
+            margin: 0px 3%;
+        }
+
+        .firstPath a, .secondPath a{
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding-top: 7%;
+        }
+
+        .secondPath {
+            margin-top: -1%;
+        }
+
+        .imageContainer{
+            text-align: center;
+        }
+        .newsImage{
+            width: 30rem;
+            height: 30rem;
+            margin-top: 5%;
+            box-shadow: 1px 0px 20px 7px rgb(134, 24, 24);
+        }
+
+        .newsContent {
+            margin: 5% 5%;
+        }
+
+        .newsContent h1{
+            color: rgb(134, 24, 24);
+        }
+
+        .newsContent p{
+            margin-top: 2%;
+            line-height: 2.5rem;
+        }
+
+        .newsContent button{
+            background-color: rgb(159, 35, 35);
+            margin-top: 2%;
+            border-radius: 1rem;
+        }
+
+        .newsContent button:hover{
+            background-color: rgb(113, 16, 16);
+        }
+        
+        @media screen and (max-width: 370px)
+        {
+            .newsImage {
+                width: 18rem;
+                height: 17rem;
+            }
+        }
+        @media screen  and (max-width: 575px){
+            .newsContent h1 {
+                text-align: center;
+            }
+            .newsContent p {
+                line-height: 2rem;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media screen and (max-width: 375px) and (max-width: 575px){
+            /* .newsImage {
+                width: 22rem;
+                height: 20rem;
+            } */
+        }
+
+        @media screen and /*(min-width: 769px) and */ (max-width: 769px){
+            .path{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+            }
+        }
+    </style>
+<body>
+
+    <!-----------------------------  HEADER ------------------------>
+    <header class="news_header">
+        <div class="showw navBar">
+            <a href="index.html" class="logo" ><img src="resources/img/codersHubLogoWhite.png" alt=""></a>
+            <nav class="navigation">
+                <ul class="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="aboutUs.html">About</a></li>
+                        <li> <a href="courses.html">Courses</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <a class="cta" href="contactUs.html"><button>Let's Talk</button></a>
+                    </ul>  
+                </nav>
+          
+        </div>
+        <div class="path">
+            <div class="firstPath">
+                <a href="news.html">News</a>
+            </div>
+            >
+            <div class="secondPath">
+                <a href="news1.html">Bootcamp Training</a>
+            </div>
+        </div>
+
+            <!-- fixed-top -->
+        <nav class="hide navbar bg-body-tertiary " style="background: transparent !important;">
+            <div class="container-fluid">
+                <img class="navbar-brand"  src="resources/img/codersHubLogoWhite.png" alt="" >
+            <button class="navbar-toggler" type="button" style="background-color: #fff;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" style="width: 40%" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img class="offcanvas-title"  src="resources/img/codersHubLogo.png" alt="" >
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: rgb(134, 24, 24);">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Let's Talk</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="newsContainer">
+        <div class="imageContainer">
+        <img class="newsImage" src="resources/img/news/news-1.jpg" alt="">
+    </div>
+    <div class="newsContent">
+        <h1>Bashkohuni në BootCamp-in falas në Full-Stack Development!</h1>
+        <p>Mundësi zhvillimi në karrierë nëpërmjet programit tonë: <br>
+            Bashkohuni në BootCamp-in falas në Full-Stack Development! <br>
+            Në kuadër të rritjes së vazhdueshme në industrinë e teknologjisë,
+            Ju njoftojmë një nismë të veçantë: një bootcamp dy-ditor FALAS në Full-Stack Development! <br>
+            Datat: 11-12 Shtator 2024 <br>
+            Kohëzgjatja: 2 ditë <br>
+            Afati i fundit për regjistrim: 10 Shtator <br>
+            Mund ta ndiqni:Online dhe Fizikisht <br>
+            Ky bootcamp është projektuar për të ju aftësuar me njohuritë e nevojshme për të avancuar në teknologjitë front-end dhe back-end.
+            Pavarësisht nëse jeni fillestarë ose dëshironi të përmirësoni aftësitë tuaja të kodimit, ky Bootcamp është nismë ideale për ju! <br>
+        <button><a href="https://codershubeu.com/sq/forma-e-aplikimit-boot-camp/">Apliko tani</a></button>
+    </div>
+    </section>
+
+
+
+    <div class="footerContainer">
+    
+        <div class="banner">
+            <h4>Take our Intensive Courses To Learn Practical Skills</h4>
+            <a href="#" class="hero-btn getStartedBtn">Get Started</a>
+        </div>
+    
+        <footer>
+                <div class="footer-container">
+                    <div class="footer-section footer1">
+                      <img src="resources/img/codersHubLogoWhite.png" class="footer1-img" alt="">
+                      <p class="footer1-text">Helping European companies train and employ tomorrow's IT workforce. </p>
+                      <div class="support-container">
+                        <img src="resources/img/hours.png" alt="">
+                        <p>Office Hours <br>
+                           Monday-Friday <br>
+                           8 AM - 4 PM PST</p>
+                      </div> 
+                      <div class="support-container">
+                        <img src="resources/img/headset-solid.png" alt="">
+                        <p>Support Hours <br>
+                            24/7 365</p>
+                      </div>
+                    </div>
+                    <div class="footer-section footer2">
+                      <h3>Contact info</h3>
+                      <div class="contact-container">
+                        <img src="resources/img/mail.png" >
+                        <p class="">office@codershubkosovo.eu</p>
+                      </div>
+                      <div class="contact-container">
+                        <img src="resources/img/phone.png" >
+                        <p class="">+383 (0) 48 819 910</p>
+                      </div>
+                      <div class="contact-container">
+                        <img src="resources/img/location.png" style="width: 1.7rem; height: 2rem;" >
+                        <p class="">St. Enver Maloku, 10000 Prishtina <br>
+                          St. Ukë Bytyçi, ITP, 20000 Prizren <br>
+                          Kosovo</p>
+                      </div>
+                    </div>
+                    <div class="footer-section footer3">
+                      <h3>Our Services</h3>
+                      <div class="services-container">
+                        <h4>Training </h4>
+                        <h4>Employment</h4>
+                        <h4>Outsourcing</h4>
+                      </div>
+                    </div>
+                    <div class="footer-section footer4">
+                      <h3>Our Courses</h3>
+                      <div class="services-container">
+                        <h5>Full-Stack Web Developer</h5>
+                        <h5>Front-end Developer</h5>
+                        <h5>Back-end Developer</h5>
+                        <h5>Cyber Security</h5>
+                        <h5>Blockchain Developer</h5>
+                        <h5>XR - Extended Reality</h5>
+                        <h5>Amazon AWS - Practitioner</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                  <p>&copy; 2024 Coders Hub, All Rights Reserved.</p>
+                  <img src="resources/img/instagram.png" alt="">
+                  <img src="resources/img/facebook.png" alt="">
+                  <img src="resources/img/linkedin.png" alt="">
+                </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

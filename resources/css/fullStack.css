@@ -1,0 +1,247 @@
+.course_header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(134, 24, 24, 0.8),  rgba(134, 24, 24, 0.7)), url('../img/courses/courseHeader.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.course_hero-text{
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.course_hero-text h1{
+    font-size: 3rem;
+}
+
+.path{
+    width: 50%;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPath, .secondPath{
+    margin: 0px 6%;
+}
+
+.firstPath a, .secondPath a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-top: 7%;
+}
+
+
+
+/*          about course                  */
+.aboutCourse{
+    height: 100vh;
+    width: 100%;
+}
+
+.courseLayout{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 8% 1%;
+}
+
+.courseImg {
+    margin-right: 3%;
+}
+
+.courseImg img{
+ width: 100%;
+ box-shadow: 1px 1px 15px 2px rgb(43, 45, 66);
+}
+
+.courseText{
+    margin: 5%;
+}
+
+.courseText h2{
+    font-size: 3rem;
+    color: rgb(134, 24, 24);
+}
+
+.courseText p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5rem;
+    margin-top: 5%;
+}
+
+
+.courseInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.7rem;
+}
+
+.courseInfoContent img{
+    width: 3rem;
+}
+
+.courseInfoContent {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.courseInfoContent h5{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+
+.color{
+    color: rgb(134, 24, 24);
+}
+
+.accordionSection{
+    height: auto;
+}
+
+.accordion {
+    width: 80%;
+    position: relative;
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: rgb(134, 24, 24) !important;
+}
+.accordion-button:not(.collapsed) .color {
+    color: white;
+}
+
+
+.courseMargin{
+    margin: 1% 14% 3%;
+}
+
+.pershkrimiText{
+    margin: 2% 5%;
+}
+
+
+.planprogrami h4{
+    color: rgb(134, 24, 24);
+    font-size: 1.5rem;
+    
+}
+
+.planprogrami li {
+    color: rgb(43, 45, 66) !important;
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+@media screen and /* (min-width: 601px) and */ (max-width: 365px){
+    .path {
+        width: 95%;
+    }
+    .secondPath {
+        margin-top: -0.6rem;
+    }
+    .courseText h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .course_hero-text {
+        width: 100%;
+    }
+    .course_hero-text h1 {
+        font-size: 1.5rem;
+    }
+    .courseLayout {
+        grid-template-columns: 1fr;
+    }
+    .courseImg img{
+        display: none;
+    }
+
+    .courseText p {
+        text-align: justify;
+    }
+    .courseInfo {
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+    }
+
+    .aboutCourse {
+        height: 165vh;
+    }
+}
+@media screen and  (min-width: 366px) and (max-width: 485px){
+    .path {
+        width: 95%;
+    }
+    .secondPath {
+        margin-top: -0.6rem;
+    }
+    .courseText h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .course_hero-text {
+        width: 100%;
+    }
+    .course_hero-text h1 {
+        font-size: 1.5rem;
+    }
+    .courseLayout {
+        grid-template-columns: 1fr;
+    }
+    .courseImg img{
+        display: none;
+    }
+
+    .courseText p {
+        text-align: justify;
+    }
+    .courseInfo {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 490px) and (max-width: 768px){
+    .path {
+        width: 95%;
+    }
+    .secondPath {
+        margin-top: -0.6rem;
+    }
+    .courseText h2 {
+        text-align: center;
+    }
+    .course_hero-text h1 {
+        font-size: 2rem;
+    }
+    .courseLayout {
+        grid-template-columns: 1fr;
+    }
+    .courseImg img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .accordionSection {
+        margin-top: 15%;
+    }
+}

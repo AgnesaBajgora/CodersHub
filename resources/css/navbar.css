@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Oxanium', sans-serif;
+    font-size: 16px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.hide{
+    display: none !important;
+}
+
+/************************************************ NAVBAR *************************************************/
+
+li, a, button{
+    font-weight: 500;
+    font-size: 0.8rem; 
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color: white !important;
+}
+
+
+/* header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 2%;
+} */
+
+.logo{
+    order: 1;
+    cursor: pointer;
+    width: 12%;
+}
+
+.navigation{
+    order: 2;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover{
+    text-decoration: underline;
+}
+
+.navLinks{
+    margin-bottom: 0;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(43, 45, 66);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta{
+    order: 3;
+}
+
+button:hover{
+
+}

@@ -1,0 +1,123 @@
+
+.banner {
+    width: 70%;
+    height: 47vh;
+    background-color: rgb(43, 45, 66);
+    color: white;
+    position: relative;
+    bottom: 50%; /* Adjust this value to position the banner above the footer */
+    left: 50%;
+    transform: translate(-50%, 50%); /* Centers the banner horizontally and overlaps it vertically with the footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensures the banner stays on top of the footer */
+}
+
+.banner h4{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 3.5rem;
+}
+
+.getStartedBtn{
+    color: rgba(134, 24, 24) !important;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+/************************* FOOTER ********************************/
+
+.footer-container{
+    background-color: rgb(141, 36, 36);
+    color: #fff;
+    padding: 19% 1% 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 73px;
+}
+
+.footer-container h3{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.footer1-text{
+    font-size: 99%;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10%;
+    color: #c4c4c4;
+}
+
+
+.footer1-img{
+width: 14rem;
+height: 3rem;
+}
+
+.support-container{
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    margin-top: 30px;
+}
+
+.support-container img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 19px;
+}
+
+.support-container p{
+    font-size: 107%;
+    margin: 0;
+    color: #c4c4c4;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    margin-top: 30px;
+}
+
+.contact-container img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 19px;
+}
+
+.contact-container p{
+    font-size: 107%;
+    color: #c4c4c4;
+}
+
+.services-container h4{
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 7%;
+    color: #c4c4c4;
+}
+
+.services-container h5{
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 8%;
+    color: #c4c4c4;
+}
+
+.footer-bottom{
+    display: grid;
+    grid-template-columns: 1fr 60px 60px 60px;
+    padding: 1.5% 1%;
+    background-color: #7D0808;
+}
+
+.footer-bottom img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-bottom p{
+    margin-bottom: 0;
+    color: #fff;
+}

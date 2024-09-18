@@ -1,0 +1,1270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Oxanium', sans-serif;
+    font-size: 16px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(134, 24, 24, 1), rgba(134, 24, 24, 0.881), rgba(134, 24, 24, 0.808)), url('../img/homePage/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.navigation li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(43, 45, 66);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+  
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.navButton:hover{
+background-color: rgb(19, 21, 39);
+}
+
+/************************************************** HERO ***************************************************/
+
+.hero-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero-text p{
+    margin: 10px 0 40px;
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+.hero-btn{
+    display: inline-block;
+    color: white;
+    padding: 0.9rem 3rem;
+    font-size: 1.3rem;
+    background-color: rgb(43, 45, 66);
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.hero-btn:hover{
+    background-color: rgb(19, 21, 39);
+    }
+
+/* Bracket styling */
+.bracket {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    font-size: 21rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f3f3f3; 
+    z-index: 0; 
+}
+
+.left-bracket {
+    left: -7rem; /* Positioning to the left of the text */
+}
+
+.right-bracket {
+    right: -7rem; /* Positioning to the right of the text */
+}
+
+/***********************************   GET TO KNOW US    ***********************************************/
+
+.getToKnowUs{
+    height: 100vh;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 2% 1%;
+}
+
+.aboutImg img{
+ width: 100%;
+}
+
+.aboutText{
+    margin: 5%;
+}
+
+.aboutText h2{
+    font-size: 3.5rem;
+    color: rgb(134, 24, 24);
+}
+
+.aboutText p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5rem;
+    margin-top: 5%;
+}
+
+.learnMoreBtn{
+    background-color: rgb(134, 24, 24);
+    padding: 20px 40px;
+}
+.learnMoreBtn:hover{
+    background-color: rgb(91, 16, 16);
+}
+
+.learnBtn{
+    margin-top: 10%;
+}
+
+
+/*************************************** OUR SERVICES *********************************************/
+
+.ourServices{
+    height: 130vh;
+    width: 100%;
+    background-color: rgb(134, 24, 24);
+}
+
+.ourServiceImg{
+    margin: 5% 15%;
+}
+.ourServiceImg h2{
+    font-size: 66px;
+    color: white;
+}
+
+.ourServiceImg img {
+    width: 33rem;
+    padding-left: 2rem;
+}
+
+.services {
+    padding: 5%;
+}
+
+.services-section {
+    display: flex;
+    max-width: 95%;
+    flex-direction: column;
+    margin: 8% 0;
+  }
+  
+  .services-header {
+    /* align-self: flex-start; */
+    /* z-index: 10; */
+    display: flex;
+    margin-top: -11px;
+    /* align-items: flex-start; */
+    gap: 28px;
+    font-family: Oxanium, sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+}
+  .services-number {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 0.3rem;
+  }
+  
+  .services-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+  
+  .services-content {
+    display: flex;
+    width: 100%;
+    padding-left: 6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Inter, sans-serif;
+  }
+
+  button.learn-more-button {
+    margin-top: 0;
+}
+button.learn-more-button a{
+    color: rgb(43, 45, 66) !important;
+    font-weight: bold;
+}
+
+button.learn-more-button:hover{
+    background-color: rgb(43, 45, 66);
+}
+button.learn-more-button a:hover{
+    color: #fff !important;
+}
+
+.btnHover:hover{
+    background-color:rgb(91, 16, 16);
+    color: #fff !important;
+}
+
+  
+.services-description {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.learn-more-button {
+    border-radius: 18px;
+    background-color: #fff;
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 19px;
+    cursor: pointer !important;
+    color: #2b2d42 !important;
+}
+
+
+/*************************************************** COURSES *********************************************/
+
+.skills-banner {
+    background-color: rgb(43, 45, 66);
+    width: 60%;
+    height: 15rem;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: -10rem;
+    left: 20%;
+    padding: 5%;
+}
+
+.skills-banner h4{
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;                
+}
+
+.courses{
+    color: rgb(43, 45, 66);
+    margin-top: 3rem;
+}
+
+.coursesContent {
+    margin: -6% 0 5% 0;
+}
+
+.courses-head h2{
+    color: rgb(43, 45, 66);
+    font-size: 3rem;
+    margin-left: 5rem;
+    font-weight: 600;
+}
+
+.courses-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.courses-wrapper{
+    min-height: 10rem;
+    margin: 0 7rem 2rem;
+    padding: 1.5rem 0.8rem;
+    overflow: hidden;
+}
+
+.courses-list .courses-item .courses-link{
+    width: 17rem;
+    height: 20rem;
+    padding: 18px;
+    background: rgb(141, 36, 36);
+    border-radius: 12px; 
+    cursor: grabbing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*
+.courses-list .courses-link .icon{
+    text-align: center;
+    font-weight: 900;
+    font-size: 155px;
+    padding: 15%;
+    color: #fff;
+    background-color: rgb(141, 36, 36);
+    margin-left: 5px;
+}
+    */
+
+.courses-img{
+    width: 11rem;
+    margin: 10%;
+    height: 11rem;
+}
+
+ .courses-title{
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #2b2d42;
+    padding: 5% 3%;
+    border-radius: 10px; 
+}
+
+.courses-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background-color: rgb(43, 45, 66);
+}
+
+.courses-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.courses-wrapper .swiper-slide-button{
+    color: rgb(43, 45, 66);
+    margin-top: -35px;
+}
+
+.swiper-slide-button.swiper-button-prev{
+    left: 5%;
+}
+
+.swiper-slide-button.swiper-button-next{
+    right: 5%;
+}
+
+/*to hide narrows*/
+@media screen and (max-width:768px){
+    .courses-wrapper{
+        margin: 0 10px 25px;
+    }
+    .courses-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
+
+/*************************************  PARTNERS     *************************************/
+
+.partnersSection{
+    background-color: rgb(43, 45, 66);
+    min-height: 100vh;
+}
+
+.partnersText{
+    color: #fff;
+    padding: 5rem 4rem 2rem;
+    text-align: center;
+}
+
+.partnersSection h4 {
+    font-size: 3rem;
+}
+
+.sliderContainer{
+    display: grid;
+    /* min-height: 100vh; */
+    place-items: center;
+}
+
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px * 10); /* 10 slides * 250px each */
+    animation: scroll 15s linear infinite; /* Add this line */
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 5)); /* Moves 5 slides to the left */
+    }
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.sliderContainer img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.sliderContainer img:hover{
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right, rgba(43, 45, 66, 1) 0%, rgba(43, 45, 66, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+
+.slider::after{
+    right: -1px;
+    top: 0;
+    transform: rotateZ(180deg);
+
+}
+
+
+/*************************************************** IMPACT *********************************************/
+
+
+.title{
+    text-align: center;
+    margin: 1em;
+}
+
+.impactSection {
+    text-align: center;
+    min-height: 90vh; 
+}
+
+.impactText{
+    color: rgb(134, 24, 24);
+    padding: 5rem 4rem 2rem;
+    text-align: center;
+}
+
+.impactText h4 {
+    font-size: 3rem;
+}
+
+.impact {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 3em 2em;
+    color: #fff;
+}
+
+.counters {
+    width: 100%; 
+}
+
+.counters > div{
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+}
+
+.counter {
+    position: relative;
+    background-color: #5e5e5e;
+    padding: 3.5rem;
+}
+
+.counter h1{
+    font-size: 5rem;
+    margin-bottom: 0.5em;
+}
+
+.counter h3{
+    font-size: 1.5rem;
+}
+
+.dataText{
+    font-size: 5rem;
+}
+
+/* .counter:not(:last-child)::before{
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 3em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1em;
+} */
+
+.counter:hover i,.counter:hover h5,.counter:hover p{
+    color: #944e07;
+    border-color: #944e07;
+}
+    
+.counter::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    /* border-radius: 20px; */
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.counter:hover::after{
+    transform: rotate(13deg);
+    background-color: rgb(134, 24, 24);
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    .counters > div{
+        grid-template-columns: 1fr 1fr;
+    }
+    .counter:nth-child(2)::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .counters > div{
+        grid-template-columns: 1fr;
+        row-gap: 5em;
+    }
+    .counter:not(:last-child)::before{
+        width: 90%;
+        height: 2px;
+        top: initial;
+        right: initial;
+        bottom: -3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*******************************************************************************************************************/
+/********************************************  MEDIA QUERIES  ******************************************************/
+/*******************************************************************************************************************/
+
+@media screen and (max-width: 373px){
+    body, html {
+        overflow-x: hidden;
+    }
+    div#offcanvasNavbar {
+        width: 65% !important;
+    }
+    .bracket {
+        font-size: 17rem;
+    }
+    .hide{
+        display: block !important;
+    }
+    .showw{
+        display: none !important;
+    }
+    .hero-text{
+        top: 55%;
+        width: 80%;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text p {
+        margin: 10px 0 31px;
+        font-size: 0.8rem;
+        line-height: 24px;
+    }
+    .bracket {
+        font-size: 0;
+    }
+    .hero-btn{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    .getToKnowUs {
+        height: 125vh;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        padding: 11% 1%;
+        gap: 25px;
+    }
+    .aboutText h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .aboutText p {
+        font-size: 0.7rem;
+        font-family: 'Inter', sans-serif;
+        line-height: 1rem;
+        margin-top: 4%;
+        text-align: center;
+    }
+    .learnMoreBtn{
+        padding: 13px 26px;
+        margin-left: 84px;
+    }
+
+    .ourServices {
+        height: 200vh;
+    }
+    .ourServiceImg h2 {
+        font-size: 2rem;
+    }
+    .ourServiceImg img {
+        width: 18rem;
+        padding-left: 0;
+    }
+    .services-content{
+        padding-left: 4rem;
+    }
+    .services-title, .services-number  {
+        font-size: 1.5rem;
+    }
+    .services-description{
+        font-size: 0.8rem;
+    }
+    .learn-more-button{
+        font-size: 12px;
+    }
+    .skills-banner {
+        width: 68%;
+        height: 9rem;
+        top: -8rem;
+        left: 16%;
+    }
+    .skills-banner h4{
+        font-size: 1.5rem;
+    }
+
+    .courses-head h2{
+        font-size: 2rem;
+    margin-left: 4rem;
+    }
+    .courses-list .courses-item .courses-link {
+        width: 16rem;
+    }
+
+    .partnersSection h4 {
+        font-size: 2.2rem;
+    }
+
+    .impactText h4 {
+        font-size: 2rem;
+    }
+    .counter{
+        padding: 3rem 2rem;
+    }
+    .dataText, .counter h1 {
+        font-size: 3rem;
+    }
+    .counter h3 {
+        font-size: 1.2rem;
+    }
+
+    .footerContainer .banner{
+        width: 80%;
+        height: 30vh;
+    }
+    .footerContainer .banner h4 {
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        margin: -7px
+    }
+
+    footer .footer-container{
+        padding: 34% 9% 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+    footer .footer1-img {
+        width: 12rem;
+        height: 2.5rem;
+    }
+    footer .services-container h4 {
+        font-size: 1rem;
+    }
+    footer .services-container h5 {
+        font-size: 0.8rem;
+    }
+    footer .footer-bottom {
+        display: grid;
+        grid-template-columns: 1fr 40px 40px 40px;
+    }
+    footer .footer-bottom p{
+        font-size: 0.6rem;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    footer .footer-bottom img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-top: 6px;
+    }
+   
+
+
+
+
+}
+
+/* Small Devices (Phones) */
+@media screen and (min-width: 374px)  and (max-width: 600px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .bracket {
+        font-size: 0;
+    }
+    .hide{
+        display: block !important;
+    }
+    .showw{
+        display: none !important;
+    }
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+    .hero-text p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .hero-btn {
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
+    }
+    .hero-text {
+        width: 75%;
+    }
+
+    .navLinks {
+        margin: 1rem;
+    }
+    .navBar {
+        padding: 0 2%;
+    }
+    .logo {
+        width: 15%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Change to a single column */
+        gap: 20px; /* Adjust the gap if needed */
+    }
+    .getToKnowUs {
+        height: 105vh;
+    }
+    .aboutImg img {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .aboutText h2 {
+        font-size: 1.5rem;
+    }
+    .aboutText p {
+        font-size: 0.7rem;
+    } 
+    .aboutText {
+        margin-top: 0%;
+    }   
+    .aboutText p{
+        margin: 0%;
+    }   
+    .learnMoreBtn {
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+    }
+    .learnBtn {
+        margin-top: 5%;
+        text-align: center;
+        position: relative;
+    }
+
+    .services {
+        padding: 0% 5% 5% 5% !important;
+    }
+    .ourServices {
+        height: 175vh;
+    }
+    .ourServiceImg {
+        margin: 5% 5% 0% 5%;
+        height: 19rem;
+    }
+    .ourServiceImg img {
+        width: 22rem;
+        left: 25%;
+        top: -17%;
+        position: relative;
+    }
+    .services-content {
+        padding-left: 0rem;
+    }
+    .services-description {
+        font-size: 0.8rem;   
+        padding-left: 3.5rem;
+        margin: 0; 
+    }
+    button.learn-more-button {
+        font-size: 0.7rem;
+    }
+    .services {
+        padding: 10% 5% 5% 5%;
+    }
+    .skills-banner {
+        width: 75%;
+        height: 13rem;
+        left: 13%;
+    }
+    .skills-banner h4 {
+        font-size: 2rem;
+    }
+    .buttonHide{
+        display: none !important;
+    }
+    /* .skills-banner {
+        top: -8%;
+    } */
+    .footerContainer .banner {
+        width: 85%;
+        height: 35vh;
+    }
+    .swiper-wrapper {
+        margin: 0 7% 5%;
+    }
+    .courses-wrapper {
+        margin: 0;
+    }
+
+    .ourServiceImg h2 {
+        font-size: 2.8rem;
+    }
+    .ourServiceImg img {
+        padding: 0;
+    }
+    .services-header {
+        gap: 1rem;
+        height: 3rem;
+    }
+    .services-number{
+        padding: 0;
+    }
+    .services-title {
+        font-size: 1.6rem;
+        margin-top: 2%;
+    }
+    .services-section{
+        margin-bottom: 5%;
+    }
+
+    .coursesContent {
+        margin: -19% 0 5% 0;
+    }
+
+    .counters > div {
+        grid-template-columns: 1fr;
+    }
+
+    /* .banner h4 {
+        font-size: 1.5rem !important;
+    } */
+    .banner {
+        width: 80%;
+    }
+    .footerContainer .banner h4 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .footer-container {
+        padding: 42% 16% !important;
+        display: grid;
+        grid-template-columns: 85% !important;
+    }
+} 
+/* Medium Devices (Tablets) */
+@media screen and (min-width: 601px) and (max-width: 768px){
+    body, html {
+        overflow-x: hidden;
+    }
+    .bracket {
+        font-size: 18rem;
+    }
+    .hide{
+        display: block !important;
+    }
+    .showw{
+        display: none !important;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .hero-btn {
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
+    }
+    .hero-text {
+        width: 60%;
+    }
+
+    .navLinks {
+        margin: 1rem;
+    }
+    .navBar {
+        padding: 0 2%;
+    }
+    .logo {
+        width: 15%;
+    }
+
+    .aboutImg {
+        position: relative;
+        top: 25%;
+        left: 5%;
+    }
+    .aboutText h2 {
+        font-size: 1.5rem;
+    }
+    .aboutText p {
+        font-size: 0.7rem;
+    } 
+    .aboutText {
+        margin-top: 15%;
+    }   
+    .learnMoreBtn {
+        padding: 1rem 2rem;
+    }
+
+    .counters > div {
+        margin: 0;
+    }
+
+    
+    .ourServices {
+        height: 135vh;
+    }
+    .ourServiceImg {
+        margin: 15%;
+    }
+    .ourServiceImg img {
+        width: 22rem;
+    }
+    .services-content {
+        padding-left: 0rem;
+    }
+    .services-description {
+        font-size: 0.8rem;    
+    }
+    button.learn-more-button {
+        font-size: 0.7rem;
+    }
+    .services {
+        padding: 10% 5% 5% 5%;
+    }
+    .skills-banner h4 {
+        font-size: 2rem;
+    }
+    .skills-banner {
+        padding: 5% 0;
+        width: 70%;
+        left: 15%;
+    }
+
+    .ourServiceImg h2 {
+        font-size: 3.2rem;
+    }
+    .ourServiceImg img {
+        padding: 0;
+    }
+    .services-header {
+        gap: 1rem;
+    }
+    .services-title {
+        font-size: 2rem;
+        margin-top: 4%;
+    }
+
+    .banner h4 {
+        padding: 1rem 1.5rem !important;
+        font-size: 2rem !important;
+    }
+
+    footer .footer-container {
+        padding: 25% 5%;
+    }    
+
+    footer .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        
+}
+
+/* Landscape Tablets and Small Desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for devices with a width between 769px and 1024px */
+    body, html {
+        overflow-x: hidden;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .hero-btn {
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
+    }
+    .hero-text {
+        width: 60%;
+    }
+
+    .navLinks {
+        margin: 1rem;
+    }
+    .navBar {
+        padding: 0 2%;
+    }
+    .logo {
+        width: 15%;
+    }
+
+    .aboutImg {
+        position: relative;
+        top: 15%;
+        left: 5%;
+    }
+    .aboutText h2 {
+        font-size: 2.5rem;
+    }
+    .aboutText p {
+        font-size: 0.7rem;
+    } 
+    .aboutText {
+        margin-top: 15%;
+    }   
+    .learnMoreBtn {
+        padding: 1rem 2rem;
+    }
+
+    .ourServices {
+        height: 140vh;
+    }
+    .ourServiceImg {
+        margin: 15%;
+    }
+    .ourServiceImg img {
+        width: 22rem;
+    }
+    .services-content {
+        padding-left: 4rem;
+    }
+    .services-description {
+        font-size: 0.8rem;    
+    }
+    button.learn-more-button {
+        font-size: 0.7rem;
+    }
+    .services {
+        padding: 10% 5% 5% 5%;
+    }
+    .skills-banner h4 {
+        font-size: 2.5rem;
+    }
+
+    .counters > div {
+        margin: 0 auto;
+    }
+
+    .banner h4 {
+        font-size: 2.5rem !important;
+    }
+    .footer1 {
+        font-size: 1rem;
+    }
+
+    .support-container p {
+        font-size: 96% !important; 
+    }
+    .contact-container p {
+        font-size: 85% !important;
+    }
+    .contact-container {
+        grid-template-columns: 4.5rem 1fr;
+    }
+    .contact-container img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .services-container h4 {
+        font-size: 1rem;
+    }
+    .footer-section h3{
+        font-size: 1.5rem !important;
+    }
+        
+}
+
+/* Large Desktops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .hero-text {
+        top: 55%;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+    .hero-btn {
+        padding: 0.5rem 2rem;
+    }
+
+    .aboutImg {
+        top: 12%;
+    }
+    .aboutText {
+        margin-top: 10%;
+    }
+    .aboutImg img {
+        width: 95%;   
+    }
+    .aboutText h2 {
+        font-size: 2.5rem;
+    }
+    .aboutText p {
+        font-size: 0.8rem;
+    }
+    .learnMoreBtn {
+        padding: 1rem 2rem;
+    }
+    .grid {
+        padding: 4% 1%;
+    }
+    
+
+    .ourServiceImg h2 {
+        font-size: 3rem;
+    }
+    .ourServiceImg img {
+        width: 27rem;
+    }
+    .services-header {
+        gap: 1rem;
+    }
+    .services-title {
+        font-size: 1.7rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .services-content {
+        padding-left: 3.5rem;
+    }
+    .services-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .skills-banner h4 {
+        font-size: 2.5rem;
+    }
+    .ourServices {
+        height: 145vh;
+    }
+
+    .courses-wrapper{
+        padding: 0;
+    }
+
+    .counters > div {
+        margin: 0;
+    }
+
+    .banner h4 {
+        font-size: 2.5rem !important;
+    }
+
+}
+
+/* Extra Large Desktops */
+@media screen and (min-width: 1201px) {
+    /* Styles for devices with a width of 1201px or greater */
+    .ourServices {
+        height: 140vh;
+    }
+}
+
+/* Ultra Large Screens */
+@media screen and (min-width: 1600px) {
+    /* Styles for devices with a width of 1600px or greater */
+    .aboutText{
+        padding-top: 3rem;
+    }
+    .services {
+        padding: 2%;
+    }
+    .services-section {
+        max-width: 80%;
+        margin: 9% 0;
+    }
+    .services-content {
+        margin-top: 1rem;
+    }
+    button.learn-more-button {
+        margin-top: 2rem;
+    }
+}
